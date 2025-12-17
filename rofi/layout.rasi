@@ -1,0 +1,110 @@
+@import "theme.rasi"
+
+* {
+    font: "JetBrainsMono Nerd Font 10";
+    width: 400;
+}
+
+element-text, element-icon , mode-switcher {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+window {
+    border-color: @accent;
+    border-radius: 2px;
+    border: 2px solid;
+    background-color: @bg-col;
+}
+
+mainbox {
+    background-color: @bg-col;
+    padding: 25px;
+}
+
+inputbar {
+    children: [prompt,entry];
+    background-color: @bg-alt;
+    border-radius: 5px;
+
+    text-color: @fg-col;
+    padding: 2px;
+    margin: 0 0 1px 0;
+
+}
+
+prompt {
+    text-color: @bg-col;
+    background-color: @accent;
+    padding: 5px;
+    border-radius: 3px 0 0 3px;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: ":";
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: @fg-alt;
+    padding: 4px;
+    text-color: @fg-col;
+    background-color: @bg-col;
+    vertical-align: 0.5;
+}
+
+listview {
+    padding: 15px 0px 0px 0px;
+    columns: 1;
+    lines: 4;
+    background-color: @bg-col;
+}
+
+element {
+    margin: 3px 0px 0px 0px;
+    padding: 6px;
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 20px;
+    vertical-align: 0.5;
+}
+
+element selected.normal {
+    background-color:  @accent;
+    border-radius: 3px;
+    text-color: @bg-col;
+}
+
+mode-switcher {
+    spacing: 0;
+}
+
+button {
+    enabled: false;
+}
+
+message {
+    background-color: @bg-alt;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+textbox {
+    padding: 6px;
+    margin: 20px 0px 0px 20px;
+    text-color: @accent;
+    background-color: @bg-alt;
+}
+
+

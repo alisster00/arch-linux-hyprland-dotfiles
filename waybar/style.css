@@ -1,0 +1,46 @@
+@import "colors/current.css";
+
+* {
+    border: none;
+    border-radius: 5px;
+    font-family: "JetbrainsMono Nerd Font";
+    font-size: 10px;
+    font-weight: bold;
+    min-height: 10px;
+}
+
+window#waybar {
+
+    background-color: transparent;
+}
+
+.modules-left, .modules-center, .modules-right {
+    margin: 4px;
+    transition: none;
+    background: @base;
+    color: @text;
+}
+
+#custom-launcher, #cpu, #memory, #temperature, #hyprland-workspaces,
+#clock,
+#tray, #network, #blacklight, #custom-micro,
+#pulseaudio, #battery, #custom-power {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: none;
+    color: @text;
+    transition: 0.3s;
+}
+
+#workspaces button {
+    color: @text;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#workspaces button:hover {
+    background: transparent;
+    color: @text;
+}

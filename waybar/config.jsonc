@@ -1,0 +1,157 @@
+{
+	"layer": "top",
+
+	"modules-left": ["custom/launcher",
+      "cpu","memory",
+      "disk",
+      "temperature",
+      "hyprland/workspaces"
+    ],
+
+	"modules-center": ["clock"
+    ],
+
+	"modules-right": [
+      "tray",
+      "network",
+      "backlight",
+      "custom/micro",
+      "pulseaudio",
+      "battery",
+      "custom/power"
+    ],
+
+    "custom/launcher":{
+        "format": "",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi",
+        "tooltip": false
+    },    
+
+    "cpu": {
+        "interval": 15,
+        "format": "  {}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "  {}%",
+        "max-length": 10
+    },
+
+    "disk": {
+        "interval": 30,
+        "format": "  {percentage_used}%",
+        "path": "/"
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "  {temperatureC}°C"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "tooltip": false,
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+
+    "clock": {
+        "format": "  {:%A - %B %d, %Y - %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        //"tooltip": false,
+        "on-click": "~/.config/scripts/calendar.sh"
+        //"on-click": "~/.config/scripts/datetime_window.py"
+    },
+
+    "tray": {
+        "icon-size": 12,
+        "spacing": 10
+    },
+
+    "privacy": {
+        "icon-spacing": 10,
+        "icon-size": 18,
+        "transition-duration": 250,
+        "tooltip": false,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            }
+        ]
+    },
+
+    "network": {
+        "format-wifi": "  ",
+        "format-ethernet": "  ",
+        "format-disconnected": "  ",
+        "format-disabled": "󰖪  ",
+        "tooltip-format": "{essid} ({signalStrength}%)"
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon}  {percent}%",
+        "format-icons": ["󰃚", "󰃛", "󰃜", "󰃝", "󰃞", "󰃟", "󰃠"]
+    },
+
+    "custom/micro": {
+        "exec": "~/.config/scripts/microphone.sh",
+        "return-type": "json",
+        "interval": 1,
+        "on-click": "~/.config/scripts/microphone.sh toggle",
+        "on-scroll-up": "~/.config/scripts/microphone.sh up",
+        "on-scroll-down": "~/.config/scripts/microphone.sh down",
+        "tooltip": true
+    },
+
+    "pulseaudio": {
+        "tooltip": false,
+        "scroll-step": 5,
+        "format": "{icon}  {volume}%",
+        "format-muted": "  0%",
+        "on-click":"pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "format-icons": {
+          "default": ["", "", ""]
+		}
+	},
+
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
+    },
+
+    "custom/power":{
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "~/.config/scripts/powermenu.sh"
+    }
+}
