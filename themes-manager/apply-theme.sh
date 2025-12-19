@@ -17,8 +17,6 @@ if [[ ! -d "$THEME_DIR" ]]; then
   exit 1
 fi 
 
-mkdir -p "$CURRENT_DIR"
-
 echo "Aplicando tema: $THEME"
 
 # Waybar 
@@ -47,10 +45,7 @@ fi
 # Dunst
 if [[ -f $THEME_DIR/dunst.conf ]]; then 
   ln -sf "$THEME_DIR/dunst.conf" "$HOME/.config/dunst/dunstrc.d/current.conf"
-  pkill dunst 
-  sleep 0.2
-  dunst &
+  dunstctl reload 2>/dev/null || pkill dunst && dunst &
 fi
 
-ln -sf "$THEME_DIR" "$CURRENT_DIR/theme"
 echo "Tema '$THEME' aplicado correctamente"
