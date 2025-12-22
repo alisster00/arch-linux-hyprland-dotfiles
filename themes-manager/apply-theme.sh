@@ -21,7 +21,7 @@ echo "Aplicando tema: $THEME"
 
 # Waybar 
 if [[ -f "$THEME_DIR/waybar.css" ]]; then 
-  ln -sf "$THEME_DIR/waybar.css" "$HOME/.config/waybar/colors/current.css"
+  ln -sf "$THEME_DIR/waybar.css" "$HOME/.config/waybar/current.css"
   pkill -SIGUSR2 waybar 2>/dev/null || true
 fi 
 
