@@ -1,0 +1,18 @@
+/* NordTheme */
+
+@define-color base     #2E3440;  /* nord0 */
+@define-color surface  #3B4252;  /* nord1 */
+@define-color overlay  #4C566A;  /* nord3 */
+
+@define-color text     #D8DEE9;  /* nord4 */
+@define-color muted    #A3BE8C;  /* nord14 */
+
+@define-color love     #BF616A;  /* nord11 */
+@define-color gold     #EBCB8B;  /* nord13 */
+@define-color green    #A3BE8C;  /* nord14 */
+@define-color yellow   #D08770;  /* nord12 */
+@define-color blue     #81A1C1;  /* nord9 */
+@define-color purple   #B48EAD;  /* nord15 */
+@define-color cyan     #88C0D0;  /* nord8 */
+@define-color white    #ECEFF4;  /* nord6 */
+

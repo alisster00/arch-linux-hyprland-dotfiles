@@ -1,0 +1,20 @@
+/* NordTheme */
+
+* {
+    bg-col:   #2E3440;  /* nord0 */
+    bg-alt:   #3B4252;  /* nord1 */
+    fg-col:   #D8DEE9;  /* nord4 */
+    fg-alt:   #A3BE8C;  /* nord14 (muted accent-like) */
+
+    red:      #BF616A;  /* nord11 */
+    green:    #A3BE8C;  /* nord14 */
+    yellow:   #EBCB8B;  /* nord13 */
+    blue:     #81A1C1;  /* nord9 */
+    purple:   #B48EAD;  /* nord15 */
+    aqua:     #88C0D0;  /* nord8 */
+    orange:   #D08770;  /* nord12 */
+
+    border:   #4C566A;  /* nord3 */
+    accent:   #EBCB8B;  /* nord13 */
+}
+
