@@ -1,0 +1,18 @@
+/* Catppuccin Mocha */
+
+@define-color base     #EFF1F5;  /* base */
+@define-color surface  #313244;  /* surface0 */
+@define-color overlay  #45475A;  /* surface1 */
+
+@define-color text     #CDD6F4;  /* text */
+@define-color muted    #A6ADC8;  /* subtext0 */
+
+@define-color love     #F38BA8;  /* red */
+@define-color gold     #F9E2AF;  /* yellow */
+@define-color green    #A6E3A1;  /* green */
+@define-color yellow   #FAB387;  /* peach */
+@define-color blue     #89B4FA;  /* blue */
+@define-color purple   #F5C2E7;  /* pink */
+@define-color cyan     #94E2D5;  /* teal */
+@define-color white    #CDD6F4;  /* text */
+
