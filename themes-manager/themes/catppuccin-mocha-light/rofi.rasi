@@ -1,10 +1,10 @@
-/* Catppuccin Mocha */
+/* Catppuccin Mocha Light */
 
 * {
     bg-col:   #EFF1F5;  /* base */
     bg-alt:   #313244;  /* surface0 */
-    fg-col:   #CDD6F4;  /* text */
-    fg-alt:   #A6ADC8;  /* subtext0 */
+    fg-col:   #313244;  /* surface0 */
+    fg-alt:   #45475A;  /* surface1 */
 
     red:      #F38BA8;  /* red */
     green:    #A6E3A1;  /* green */
@@ -15,6 +15,6 @@
     orange:   #FAB387;  /* peach */
 
     border:   #45475A;  /* surface1 */
-    accent:   #F9E2AF;  /* yellow */
+    accent:   #F38BA8;  /* yellow */
 }
 

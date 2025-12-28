@@ -1,11 +1,11 @@
-/* Catppuccin Mocha */
+/* Catppuccin Mocha Light */
 
 @define-color base     #EFF1F5;  /* base */
 @define-color surface  #313244;  /* surface0 */
 @define-color overlay  #45475A;  /* surface1 */
 
-@define-color text     #CDD6F4;  /* text */
-@define-color muted    #A6ADC8;  /* subtext0 */
+@define-color text     #313244;  /* surface0 */
+@define-color muted    #45475A;  /* surface1 */
 
 @define-color love     #F38BA8;  /* red */
 @define-color gold     #F9E2AF;  /* yellow */
