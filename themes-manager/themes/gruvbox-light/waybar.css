@@ -1,0 +1,18 @@
+/* Gruvbox Light */
+
+@define-color base     #f9f5d7;
+@define-color surface  #3c3836;
+@define-color overlay  #504945;
+
+@define-color text     #3c3836;
+@define-color muted    #a89984;
+
+@define-color love     #fb4934;
+@define-color gold     #fabd2f;
+@define-color green    #b8bb26;
+@define-color yellow   #fe8019;
+@define-color blue     #83a598;
+@define-color purple   #d3869b;
+@define-color cyan     #8ec07c;
+@define-color white    #ebdbb2;
+

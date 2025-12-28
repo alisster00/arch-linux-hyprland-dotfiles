@@ -1,0 +1,17 @@
+/* Rosepine Light */ 
+
+@define-color base      #faf4ed;
+@define-color surface   #fffaf3;
+@define-color overlay   #f2e9e1;
+
+@define-color muted     #9893a5;
+@define-color subtle    #797593;
+@define-color text      #575279;
+
+@define-color love      #eb6f92;
+@define-color gold      #f6c177;
+@define-color rose      #ebbcba;
+@define-color pine      #31748f;
+@define-color foam      #9ccfd8;
+@define-color iris      #c4a7e7;
+

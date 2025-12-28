@@ -1,0 +1,20 @@
+/* Catppuccin Mocha Light */
+
+* {
+    bg-col:   #EFF1F5;
+    bg-alt:   #313244;
+    fg-col:   #4C4F69;
+    fg-alt:   #6C6F85;
+
+    red:      #F38BA8;
+    green:    #A6E3A1;
+    yellow:   #F9E2AF;
+    blue:     #89B4FA;
+    purple:   #F5C2E7;
+    aqua:     #94E2D5;
+    orange:   #FAB387;
+
+    border:   #45475A;
+    accent:   #F38BA8;
+}
+
